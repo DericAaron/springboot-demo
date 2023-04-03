@@ -29,14 +29,12 @@ public class DemoService {
 
         return combinedData;
     }
-    //https://api.github.com/users/DericAaron
+
     public UserData getUserData(String username) {
         String uri = "https://api.github.com/users/"+username;
         return restTemplate.getForObject(uri, UserData.class);
     }
 
-
-    //https://api.github.com/users/DericAaron/repos
     public List<Repo> getUserRepos(String username) {
         String uri = "https://api.github.com/users/"+username+"/repos";
 
