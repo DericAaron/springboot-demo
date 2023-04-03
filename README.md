@@ -1,5 +1,5 @@
 # Spring Boot Demo
-This is a simple Spring Boot project that provides a REST API for managing users.
+This is a simple Spring Boot project that provides a REST API for retrieving a combined subset of user github data.
 
 ## Design and Architecture
 The project is built using Spring Boot and follows a standard REST API architecture with the following layers:
