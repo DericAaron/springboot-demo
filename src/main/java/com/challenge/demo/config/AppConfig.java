@@ -1,6 +1,6 @@
 package com.challenge.demo.config;
 
-import com.challenge.demo.service.DemoService;
+import com.challenge.demo.repository.DemoExternalRepo;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ public class AppConfig {
     }
 
     @Bean
-    public DemoService service(RestTemplate restTemplate) {
-        return new DemoService(restTemplate);
+    public DemoExternalRepo repository(RestTemplate restTemplate) {
+        return new DemoExternalRepo(restTemplate);
     }
 }
