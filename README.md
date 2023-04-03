@@ -74,8 +74,3 @@ name: "boysenberry-repo-1",
 url: "https://github.com/octocat/boysenberry-repo-1" }, ...
 ] }
 ```
-
-Configuration
-The project includes a application.properties file in the src/main/resources directory. This file contains configuration settings for the service, such as the port number and database connection details.
-
-You can modify these settings to suit your needs.
